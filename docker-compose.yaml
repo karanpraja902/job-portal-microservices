@@ -5,6 +5,8 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mysql
+      POSTGRES_DB: job
+      PGTZ: UTC
       PGDATA: /data/postgres
     volumes:
       - postgres:/data/postgres
